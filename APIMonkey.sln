@@ -5,9 +5,7 @@ VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APIMonkey", "APIMonkey\APIMonkey.csproj", "{459F7D58-457F-4E23-8A55-993117519E5C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "rethinkdb-net-newtonsoft", "..\Github\rethinkdb-net\rethinkdb-net-newtonsoft\rethinkdb-net-newtonsoft.csproj", "{1D419EAA-2611-4F3B-B7E0-3175841E46EC}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "rethinkdb-net", "..\Github\rethinkdb-net\rethinkdb-net\rethinkdb-net.csproj", "{4632C7DA-1C4F-4DAB-B212-EF69059959C5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Arango.Client", "..\Github\ArangoDB-NET\src\Arango\Arango.Client\Arango.Client.csproj", "{BBB9A46E-C8DF-4A19-948D-02E2AF83765A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,14 +17,10 @@ Global
 		{459F7D58-457F-4E23-8A55-993117519E5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{459F7D58-457F-4E23-8A55-993117519E5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{459F7D58-457F-4E23-8A55-993117519E5C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1D419EAA-2611-4F3B-B7E0-3175841E46EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1D419EAA-2611-4F3B-B7E0-3175841E46EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1D419EAA-2611-4F3B-B7E0-3175841E46EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1D419EAA-2611-4F3B-B7E0-3175841E46EC}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4632C7DA-1C4F-4DAB-B212-EF69059959C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4632C7DA-1C4F-4DAB-B212-EF69059959C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4632C7DA-1C4F-4DAB-B212-EF69059959C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4632C7DA-1C4F-4DAB-B212-EF69059959C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BBB9A46E-C8DF-4A19-948D-02E2AF83765A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBB9A46E-C8DF-4A19-948D-02E2AF83765A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBB9A46E-C8DF-4A19-948D-02E2AF83765A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBB9A46E-C8DF-4A19-948D-02E2AF83765A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

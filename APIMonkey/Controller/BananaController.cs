@@ -14,7 +14,7 @@ namespace APIMonkey.Controller
     public class BananaController : ApiController
     {
         [Route("banana/{bananaId}"), HttpGet]
-        public async Task<IHttpActionResult> GetABanana(string bananaId)
+        public IHttpActionResult GetABanana(string bananaId)
         {
             try
             {
@@ -23,18 +23,14 @@ namespace APIMonkey.Controller
                     return NotFound();
                 }
 
-                var myBanana = new BananaManager().GetMyBanana(bananaId);
-
-                await Task.Run(() => myBanana);
-
-                Banana objBanana = myBanana.Result;
+                Banana objBanana = new BananaManager().GetMyBanana(bananaId);
 
                 if (objBanana == null)
                 {
                     return NotFound();
                 }
 
-                return Ok(myBanana);
+                return Ok(objBanana.flesh);
             }
             catch (Exception ex)
             {
@@ -44,22 +40,18 @@ namespace APIMonkey.Controller
         }
 
         [Route("banana"), HttpPut]
-        public async Task<IHttpActionResult> PlantABanana([FromBody]dynamic objBananaFlesh)
+        public IHttpActionResult PlantABanana([FromBody]dynamic objBananaFlesh)
         {
             try
             {
-                var myBanana = new BananaManager().PlantABanana(objBananaFlesh);
-
-                await Task.Run(() => myBanana);
-
-                Banana newBanana = myBanana.Result;
-
+                Banana newBanana = new BananaManager().PlantABanana(objBananaFlesh);
+                
                 if (newBanana == null)
                 {
                     return InternalServerError();
                 }
 
-                string location = Request.RequestUri + "/" + newBanana.Id.ToString().ToLower();
+                string location = Request.RequestUri + "/" + newBanana._key.ToString().ToLower();
                 return Created<Banana>(location, newBanana);
             }
             catch (Exception ex)

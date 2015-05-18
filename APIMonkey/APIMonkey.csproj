@@ -43,10 +43,6 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\Newtonsoft.Json.6.0.8\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
-    <Reference Include="protobuf-net, Version=2.0.0.668, Culture=neutral, PublicKeyToken=257b51d87d2e4d67, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\protobuf-net.2.0.0.668\lib\net40\protobuf-net.dll</HintPath>
-    </Reference>
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Net.Http.Formatting, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -109,13 +105,9 @@
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Github\rethinkdb-net\rethinkdb-net-newtonsoft\rethinkdb-net-newtonsoft.csproj">
-      <Project>{1d419eaa-2611-4f3b-b7e0-3175841e46ec}</Project>
-      <Name>rethinkdb-net-newtonsoft</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\Github\rethinkdb-net\rethinkdb-net\rethinkdb-net.csproj">
-      <Project>{4632c7da-1c4f-4dab-b212-ef69059959c5}</Project>
-      <Name>rethinkdb-net</Name>
+    <ProjectReference Include="..\..\Github\ArangoDB-NET\src\Arango\Arango.Client\Arango.Client.csproj">
+      <Project>{bbb9a46e-c8df-4a19-948d-02e2af83765a}</Project>
+      <Name>Arango.Client</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

@@ -9,20 +9,20 @@ namespace APIMonkey.Code
 {
     public class BananaManager
     {
-        public async Task<Banana> GetMyBanana(string bananaId)
+        public Banana GetMyBanana(string bananaId)
         {
-            Banana objBanana = await DataManager.GetMyBanana(bananaId);
+            Banana objBanana = new DataManager().GetMyBanana(bananaId);
 
             return objBanana;
         }
 
-        public async Task<Banana> PlantABanana(dynamic objBananaFlesh)
+        public Banana PlantABanana(dynamic objBananaFlesh)
         {
             Banana objBanana = new Banana();
-            objBanana.Id = Guid.NewGuid();
+            objBanana._key = Guid.NewGuid();
             objBanana.flesh = objBananaFlesh;
 
-            string firstError = await DataManager.PlantBanana(objBanana);
+            string firstError = new DataManager().PlantBanana(objBanana);
 
             if (!string.IsNullOrEmpty(firstError))
             {
