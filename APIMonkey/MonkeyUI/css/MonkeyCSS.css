@@ -1,0 +1,48 @@
+﻿body {
+}
+
+.page-header {
+    font-size: 20px;
+    font-weight: 700;
+    background-color: #888;
+    margin: 0px;
+    padding: 20px;
+    border: none;
+    color: #FFF;
+    text-shadow: 5px 5px 5px #333;
+    margin-bottom: 30px;
+}
+
+.monkey-url-ip {
+    width: 100%;
+    height: 50px;
+    padding: 2px 10px;
+    background-color: #EFEFEF;
+    border: 1px solid #5F5C5C;
+}
+
+
+.btn.btn-primary {
+    width: 100px;
+}
+
+.monkey-banana-loc-div {
+    background-color: #DCDCDC;
+    padding: 15px 10px;
+}
+
+.monkey-banana-loc {
+    margin: 40px 10px;
+    padding: 5px;
+    background-color: #83E781;
+}
+
+.another-banana {
+    width: 10%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+#btnAnotherBanana {
+    width: 100%;
+}
